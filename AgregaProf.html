@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Servicios</title>
+	<meta name="viewport" content="width=device, user-scalabe=no initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<meta charset="UTF-8">
+  <script src="js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="../cargaprofesv2/css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="./css/styless.css">
+  <link rel="stylesheet" type="text/css" href="../cargaprofesv2/css/styles1.css">
+</head>
+<body>
+	
+  <div class="collapse" id="navbarToggleExternalContent">
+    <div class="bg-dark p-4">
+      <ul class="nav justify-content-end">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="principaladmin.html">INICIO</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="infoAdmin.html">Información</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="servicios.html">Servicios</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="ayuda.html">Ayuda</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="salir.php" tabindex="-1" aria-disabled="true">Salir</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </nav>
+  <div class="contenedor-formulario">
+    <h2>Registrar Maestro</h2>
+    <div class="grid-form">
+    <form class="formularioR" action="agregaprofesores.php" method="POST">
+      <fieldset>
+      <div class="campos">  
+          <div class="campo">
+            <label>Nombre</label>
+            <input class="input-text" name="nom_profe" type="text" placeholder="Nombre">
+          </div>
+          <div class="campo">
+            <label>Apellido Paterno</label>
+            <input class="input-text" name="pat_profe" type="text" placeholder="Apellido">
+          </div>
+          <div class="campo">
+            <label>Apellido Materno</label>
+            <input class="input-text" name="mat_profe" type="text" placeholder="Apellido">
+          </div>
+        
+          <div class="campo">
+            <label>Telefono</label>
+            <input class="input-text" name="celular" type="tel" placeholder="Telefono">
+          </div>
+          <div class="campo">
+            <label>Correo</label>
+            <input class="input-text" name="correo" type="email" placeholder="e-mail">
+          </div>
+          <div class="campo">
+            <label>Fecha de Ingreso</label>
+            <input class="input-text" name="ingreso" type="date" placeholder="Fecha de Ingreso">
+          </div>
+          <div class="campo">
+            <label>Grado</label>
+            <input class="input-text" name="grado" type="text" placeholder="Grado">
+          </div>
+          
+          
+    </div>      
+    <div class="enviar">
+        <input class="boton" name="registro"type="submit" value="Enviar"> 
+    </div>
+      </fieldset>
+    </form>
+  </div>
+  </div>
+</body>
+</html>

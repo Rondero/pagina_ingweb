@@ -1,0 +1,177 @@
+.html,
+.body{
+    
+    background-image: linear-gradient(to top, #e1e9f4 0%, #417dc1 100% );
+    height: auto;
+}
+h2{
+    text-align: center;
+    font-size: 25px;
+    margin: auto;
+}
+h3{
+    margin-top: 50px;
+    text-align: center;
+}
+.contenedor-tabla{
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 50%;
+    margin: auto;
+    margin-top: 50px;
+}
+.tabla{
+    margin:0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+table{
+    margin: auto;
+    margin-top: 50px;
+    font-family:'Numans';
+    font-size:medium;
+    width: 70%;
+    height: 50px;
+    border: 2;
+    border-width: inherit;
+    text-align:left;
+    border-color: black;
+    font-size: 20px
+    
+}
+tr{
+    height: 50px;
+}
+td{
+    text-align: initial;
+}
+p{
+    font-family: 'Numans';
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.contenedor-ayuda{
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.7);
+    max-width: 95%;
+    
+    margin: auto;
+    margin-top: 50px;
+}
+@media (min-width: 768px){
+    .ayudas{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 15px;
+        margin-left: 10px;
+        margin-right: 10px;
+        
+        /*max-width:auto;*/
+    }
+}
+
+.ayuda img{
+    width: 100%;
+    height: 100%;
+}
+img{
+    margin: auto;
+    border-radius: 10px;
+    
+}
+.ayuda{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ayuda p{
+    line-height: 2;
+    text-align: center;
+}
+
+
+/*Formulario Registrar Profesores.*/
+.contenedor-formulario{
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.7);
+    max-width: 60%;
+    
+    margin: auto;
+    margin-top: 50px;
+}
+.formularioR{
+    /*background-color: #757575;*/
+    /*width: min(60rem, 100%); /*Toma el valor mas pequeño entre 600px o el 100%*/
+    margin: 0 auto; /*Margin se puede utilizar en formularios o cuando el padre no sea un display flex*/
+    padding: 10px;
+    border-radius: 10px;
+   }
+   
+   .formularioR fieldset{
+       border:none
+   }
+   /*.formularioR legend{
+       color: #000000;
+       text-align: center;
+       font-size: 18px;
+       text-transform:uppercase;
+       margin-bottom: 20px;
+       font-weight: bold;
+   }*/
+  /* @media (min-width: 768px){
+    .grid-form{
+        display: grid;
+        grid-template-columns: repeat(2 1fr);
+    }
+   }*/
+   .campos{
+       display: grid;
+       grid-template-columns: repeat(2, 1fr);
+       align-items: flex-start;
+       gap: 20px;
+   }
+   .campo{
+       margin-bottom: 15px;
+   }
+   .campo label{
+       color: #000000;
+       font-weight: bold;
+       margin-bottom: 5px;
+       display: block;
+   
+   }
+   .input-text{
+       width: 100%;
+       border:none;
+       padding: 10px;
+       border-radius: 10px;
+   }
+   .boton{
+    background-color:rgb(61, 61, 248);
+    color: #e1e9f4;
+    padding: 10px;
+    margin: 5px;
+    font-size: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+    width: 40%;
+    text-align: center;    
+    border:none;
+}
+.boton:hover{
+    cursor: pointer;
+}
+@media (min-width: 768px){
+    .boton{
+        width: auto;
+    }
+}
+   .enviar .boton{
+       align-items: center;
+       width: 20%;
+       margin-left: auto;
+       margin-right: auto;
+   }
